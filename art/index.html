@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Nahata | Art Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Satyam Nahata</h1>
+        <p>Artist • Dreamer • Storyteller</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="darkToggle" aria-label="Toggle Dark Mode">🌙</button>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>Hi! I’m Satyam, an artist who loves blending imagination with reality. 
+           My work ranges from dreamy landscapes to bold experimental pieces. 
+           This is my little corner of the internet where I share my art journey.</p>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="fade-in">
+        <h2>My Artwork</h2>
+        <div class="grid">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/2/YE/UO/VJ/9107407/beautiful-abstract-frameless-wall-painting-for-home-springfield.jpg" alt="Artwork 1">
+            <img src="https://theartsherpa.com/product/image/product_image/122/1280" alt="Artwork 2">
+            <img src="https://d7hftxdivxxvm.cloudfront.net/?height=900&quality=80&resize_to=fill&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F4zKXGz8_XLjCJDAp-Cz3yg%252FMag_abstract%2Bpainting%2Bgood.jpeg&width=1200" alt="Artwork 3">
+            <img src="https://www.outdoorpainter.com/wp-content/uploads/2019/07/From_Here_I_Can_G0_Anywhere_Landscape_Painting-Melissa-McKinnon_01.jpg" alt="Artwork 4">
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-in">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:nahatasatyam0@.com">nahatasatyam0@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/satyamnahata">@satyamnahata</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Satyam Nahata. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Dark mode toggle
+        const toggleBtn = document.getElementById("darkToggle");
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            toggleBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+        });
+    </script>
+
+</body>
+</html>
